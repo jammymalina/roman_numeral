@@ -1,9 +1,12 @@
 [package]
 name = "roman_numeral"
 version = "0.1.0"
-authors = ["jammymalina <jakub.jantosik@gmail.com>"]
+authors = ["Jakub <jakub.jantosik@gmail.com>"]
+license = "MIT"
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "Rust library for roman numerals. Encode/decode roman numerals with ease!"
+readme = "README.md"
+homepage = "https://github.com/jammymalina/roman_numeral/"
+repository = "https://github.com/jammymalina/roman_numeral/"
 
 [dependencies]

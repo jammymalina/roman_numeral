@@ -5,10 +5,7 @@ mod tests {
     fn test_numeral_error(numeral: Result<RomanNumeral, RomanNumeralError>,
         expected_error: RomanNumeralError)
     {
-        match numeral {
-            Err(e) => assert_eq!(e, expected_error),
-            _ => panic!("It should have thrown an error"),
-        };
+        assert_eq!(numeral.unwrap_err(), expected_error);
     }
 
     #[test]
@@ -45,7 +42,7 @@ mod tests {
     }
 
     #[test]
-    fn it_should_init_convert_basic_u32() {
+    fn it_should_init_basic_from_u32() {
         let roman = RomanNumeral::from_u32(1).unwrap();
         assert_eq!(roman.get(), String::from("I"));
 
@@ -66,7 +63,7 @@ mod tests {
     }
 
     #[test]
-    fn it_should_convert_from_u32() {
+    fn it_should_init_from_u32() {
         let roman = RomanNumeral::from_u32(49).unwrap();
         assert_eq!(roman.get(), String::from("XLIX"));
 
