@@ -1,5 +1,7 @@
 # roman_numeral
 
+[![Build Status](https://travis-ci.com/jammymalina/roman_numeral.svg?branch=master)](https://travis-ci.com/jammymalina/roman_numeral)
+
 Rust library for roman numerals. Encode/decode roman numerals with ease!
 
 ## Usage
